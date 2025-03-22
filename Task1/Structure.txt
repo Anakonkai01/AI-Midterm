@@ -1,0 +1,1 @@
+1. Cân nhắc việc tách các hàm tính Heuristic ra khỏi Algorithm.py

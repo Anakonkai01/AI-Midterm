@@ -1,0 +1,2 @@
+Thao tác biến đổi giữa mảng & chuỗi, dãy số liên tiếp nhau.
+Nhiều bộ giá trị trình tự có thể giải quyết với dict()
