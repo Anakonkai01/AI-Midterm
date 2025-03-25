@@ -1,0 +1,28 @@
+BFS with test case 1:
+Actions: ['U', 'L', 'D', 'U', 'L', 'R', 'D', 'R', 'D', 'L', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'L', 'D', 'R', 'R']
+Number of actions: 21
+
+BFS with test case 2:
+Actions: ['R', 'D', 'R', 'D', 'L', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'L', 'D', 'R', 'R']
+Number of actions: 16
+
+BFS with test case 3:
+Actions: ['R', 'U', 'U', 'L', 'D', 'R', 'D', 'R', 'U', 'U', 'L', 'D', 'R', 'D']
+Number of actions: 14
+
+BFS with test case 4:
+Actions: ['L', 'U', 'D', 'L', 'U', 'U', 'R', 'D', 'L', 'D', 'R', 'R']
+Number of actions: 12
+
+BFS with hard test case 1:
+Actions: ['U', 'U', 'L', 'D', 'R', 'D', 'L', 'U', 'U', 'R', 'D', 'D', 'U', 'L', 'D', 'R', 'U', 'D', 'U', 'U', 'L']
+Number of actions: 21
+
+BFS with hard test case 2:
+Actions: ['U', 'U', 'D', 'U', 'R', 'D', 'L', 'L', 'D', 'R', 'R', 'U', 'L', 'L', 'U', 'R', 'D', 'D', 'L', 'U', 'U']
+Number of actions: 21
+
+BFS with hard test case 3:
+Actions: ['U', 'U', 'D', 'U', 'R', 'D', 'D', 'L', 'U', 'L', 'D', 'R', 'U', 'D', 'U', 'R', 'U', 'L', 'L', 'D', 'R', 'U', 'R', 'D', 'D']
+Number of actions: 25
+

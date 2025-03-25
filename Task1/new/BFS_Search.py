@@ -1,10 +1,11 @@
-import Search
 from Node import Node
-import heapq
+import Search
 
-class AStarSearch(Search.Search):
-    def __init__(self, heuristic):
-        self.heuristic = heuristic
+
+class BFS_Search(Search.Search):
+    def __init__(self):
+        pass   
+
 
 
     def search(self, problem):
@@ -14,22 +15,21 @@ class AStarSearch(Search.Search):
         
         frontier = []
         explored = set()
-        h_initial = self.heuristic.getHeuristic(initial_state, problem.goal_state)
-        initial_node = Node(initial_state, None, None, 0, h_initial)
-        heapq.heappush(frontier, initial_node)
+        initial_node = Node(initial_state, None, None, 0,0)
+        frontier.append(initial_node)
 
         while frontier:
-            node = heapq.heappop(frontier)
+            node = frontier.pop(0)
 
             if problem.isGoalState(node.state):
                 return self.getPath(node)
             
             explored.add(node.ID)
             for new_state, action, cost in problem.getSuccessors(node.state):
-                new_node = Node(new_state, action, node, node.pathCost + cost, self.heuristic.getHeuristic(new_state, problem.goal_state))
+                new_node = Node(new_state, action, node, node.pathCost + cost,0)
                 if new_node.ID not in explored:
                     frontier.append(new_node)
-        return None
+        return "No solution"
     
     def getPath(self, node):
         path = []
@@ -38,4 +38,9 @@ class AStarSearch(Search.Search):
             node = node.parent
         return path
     
-        
+    def getLength(self, node):
+        length = 0
+        while node.parent:
+            length += 1
+            node = node.parent
+        return length

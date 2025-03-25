@@ -2,7 +2,7 @@ import State
 import copy
 
 
-class EightPuzzleState(State):
+class EightPuzzleState(State.State):
     def __init__(self, board):
         self.board = board # int 2D array
 
@@ -22,7 +22,11 @@ class EightPuzzleState(State):
         self.board = board
 
     def get_blank_position(self): # return position of blank cell
-        return [(i, j) for i in range(3) for j in range(3) if self.board[i][j] == 0][0]
+        for i in range(3):
+            for j in range(3):
+                if self.board[i][j] == 0:
+                    return (i, j)
+        
 
 
     def swap(self, pos1, pos2):
