@@ -1,0 +1,28 @@
+A* with test case 1:
+Actions: ['L', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'R', 'L', 'L']
+Number of actions: 11
+
+A* with test case 2:
+Actions: ['R', 'D', 'R', 'D', 'L', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'L', 'D', 'R', 'R']
+Number of actions: 16
+
+A* with test case 3:
+Actions: ['R', 'U', 'U', 'L', 'D', 'R', 'D', 'R', 'U', 'U', 'L', 'D', 'R', 'D']
+Number of actions: 14
+
+A* with test case 4:
+Actions: ['L', 'L', 'U', 'R', 'L', 'U', 'R', 'D', 'L', 'D', 'R', 'R']
+Number of actions: 12
+
+A* with hard test case 1:
+Actions: ['R', 'U', 'U', 'L', 'D', 'L', 'U', 'R', 'R', 'D', 'D', 'L', 'R', 'L', 'U', 'L', 'U', 'R', 'D', 'L', 'U']
+Number of actions: 21
+
+A* with hard test case 2:
+Actions: ['U', 'D', 'U', 'L', 'D', 'R', 'R', 'U', 'U', 'L', 'D', 'D', 'R', 'U', 'L', 'L', 'D', 'R', 'U', 'R', 'D']
+Number of actions: 21
+
+A* with hard test case 3:
+Actions: ['U', 'R', 'U', 'L', 'L', 'D', 'R', 'D', 'L', 'U', 'R', 'L', 'R', 'R', 'D', 'L', 'U', 'U', 'L']
+Number of actions: 19
+

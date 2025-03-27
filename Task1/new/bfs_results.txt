@@ -1,0 +1,120 @@
+Hard_test_case_1:
+Actions: ['L', 'U', 'R', 'U', 'L', 'D', 'L', 'U', 'R', 'D', 'D', 'R', 'U', 'U', 'L', 'D', 'L', 'U']
+Number of actions: 18
+
+Hard_test_case_2:
+Actions: ['U', 'L', 'L', 'U', 'R', 'D', 'L', 'D', 'R', 'U', 'L', 'U', 'R', 'R', 'D', 'L', 'U', 'L', 'D', 'D', 'R', 'R']
+Number of actions: 22
+
+Hard_test_case_3:
+Actions: ['L', 'U', 'U', 'L', 'D', 'R', 'U', 'R', 'D', 'L', 'U', 'L', 'D', 'R', 'U', 'R', 'D', 'D']
+Number of actions: 18
+
+Hard_test_case_4:
+Actions: ['U', 'U', 'L', 'L', 'D', 'D', 'R', 'U', 'U', 'L', 'D', 'R', 'U', 'R', 'D', 'L', 'U', 'L']
+Number of actions: 18
+
+Hard_test_case_5:
+Actions: ['U', 'U', 'D', 'L', 'L', 'U', 'D', 'D', 'R', 'U', 'R', 'D', 'L', 'U', 'U', 'R', 'D', 'L', 'U', 'L']
+Number of actions: 20
+
+Hard_test_case_6:
+Actions: ['U', 'U', 'L', 'L', 'D', 'R', 'D', 'L', 'U', 'U', 'R', 'R', 'D', 'L', 'U', 'L', 'D', 'R', 'U', 'L']
+Number of actions: 20
+
+Hard_test_case_7:
+Actions: ['U', 'L', 'D', 'R', 'U', 'L', 'D', 'L', 'U', 'R', 'U', 'R', 'D', 'D']
+Number of actions: 14
+
+Hard_test_case_8:
+Actions: ['L', 'U', 'U', 'R', 'D', 'L', 'L', 'D', 'R', 'U', 'L', 'U', 'R', 'D', 'L', 'D', 'R', 'U', 'L', 'U']
+Number of actions: 20
+
+Hard_test_case_9:
+Actions: ['U', 'U', 'L', 'D', 'D', 'L', 'U', 'U', 'R', 'D', 'D', 'L', 'U', 'R', 'R', 'D']
+Number of actions: 16
+
+Hard_test_case_10:
+Actions: ['L', 'U', 'U', 'R', 'D', 'L', 'L', 'U']
+Number of actions: 8
+
+Random_test_case_1:
+Actions: ['U', 'L', 'D', 'D', 'U', 'D', 'R', 'R', 'U', 'L', 'L', 'D', 'R', 'U', 'L', 'U']
+Number of actions: 16
+
+Random_test_case_2:
+Actions: ['U', 'L', 'D', 'R', 'R', 'U', 'L', 'L', 'D', 'D', 'R', 'U', 'U', 'R', 'D', 'D', 'L', 'U', 'L', 'U']
+Number of actions: 20
+
+Random_test_case_3:
+Actions: ['L', 'L', 'D', 'R', 'D', 'L', 'U', 'R', 'R', 'U', 'L', 'L', 'D', 'D', 'R', 'U', 'R', 'U', 'L', 'L']
+Number of actions: 20
+
+Random_test_case_4:
+Actions: ['D', 'U', 'L', 'L', 'D', 'R', 'U', 'R', 'D', 'L', 'U', 'L', 'D', 'D', 'R', 'U', 'R', 'D', 'L', 'U', 'L', 'D', 'R', 'R']
+Number of actions: 24
+
+Random_test_case_5:
+Actions: ['U', 'R', 'D', 'L', 'L', 'U', 'R', 'R', 'D', 'L', 'L', 'D', 'R', 'R']
+Number of actions: 14
+
+Random_test_case_6:
+Actions: ['U', 'L', 'D', 'D', 'U', 'R', 'U', 'L', 'L', 'D', 'D', 'R', 'U', 'L', 'U', 'R', 'D', 'D', 'R']
+Number of actions: 19
+
+Random_test_case_7:
+Actions: ['R', 'U', 'R', 'D', 'L', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'L', 'D', 'R', 'U', 'U', 'L']
+Number of actions: 18
+
+Random_test_case_8:
+Actions: ['U', 'L', 'D', 'L', 'D', 'R', 'R', 'U', 'U', 'L', 'D', 'D', 'L', 'U', 'U']
+Number of actions: 15
+
+Random_test_case_9:
+Actions: ['U', 'U', 'R', 'D', 'U', 'D', 'D', 'L', 'U', 'U', 'R', 'D', 'D', 'L', 'U', 'R', 'D', 'R']
+Number of actions: 18
+
+Random_test_case_10:
+Actions: ['U', 'U', 'R', 'R', 'D', 'L', 'U', 'L', 'D', 'D', 'R', 'U', 'U', 'L', 'D', 'R', 'U', 'R', 'D', 'D']
+Number of actions: 20
+
+Random_test_case_11:
+Actions: ['D', 'D', 'R', 'U', 'U', 'D', 'L', 'U', 'L', 'D', 'D', 'R', 'U', 'U', 'R', 'D', 'D', 'L', 'U', 'U', 'L']
+Number of actions: 21
+
+Random_test_case_12:
+Actions: ['L', 'L', 'D', 'R', 'R', 'U', 'L', 'D', 'D', 'R', 'U', 'U', 'L', 'D', 'D', 'L', 'U', 'R', 'U', 'L']
+Number of actions: 20
+
+Random_test_case_13:
+Actions: ['R', 'U', 'L', 'U', 'R', 'R', 'D', 'U', 'D', 'D', 'L', 'L', 'U', 'U', 'R', 'D', 'D', 'R']
+Number of actions: 18
+
+Random_test_case_14:
+Actions: ['D', 'R', 'U', 'L', 'U', 'R', 'D', 'D', 'L', 'L', 'U', 'U', 'R', 'D', 'D', 'R']
+Number of actions: 16
+
+Random_test_case_15:
+Actions: ['U', 'L', 'D', 'R', 'R', 'D', 'L', 'U', 'U', 'L', 'R', 'R', 'D', 'D', 'L', 'U', 'L', 'U']
+Number of actions: 18
+
+Random_test_case_16:
+Actions: ['U', 'L', 'U', 'D', 'D', 'R', 'U', 'U', 'L', 'D', 'L', 'U', 'R', 'D', 'R', 'D']
+Number of actions: 16
+
+Random_test_case_17:
+Actions: ['L', 'D', 'R', 'R', 'U', 'L', 'L', 'D', 'R', 'R', 'U', 'L', 'D', 'R']
+Number of actions: 14
+
+Random_test_case_18:
+Actions: ['R', 'D', 'U', 'D', 'L', 'L', 'U', 'R', 'D', 'D', 'R', 'U', 'U', 'L', 'L']
+Number of actions: 15
+
+Random_test_case_19:
+Actions: ['D', 'L', 'U', 'R', 'D', 'L', 'D', 'R', 'R', 'U', 'U', 'L', 'D', 'D', 'R', 'U', 'U', 'L', 'D', 'R', 'D']
+Number of actions: 21
+
+Random_test_case_20:
+Actions: ['L', 'D', 'D', 'R', 'U', 'U', 'L', 'L', 'D', 'D', 'R', 'R', 'U', 'U', 'L', 'L']
+Number of actions: 16
+

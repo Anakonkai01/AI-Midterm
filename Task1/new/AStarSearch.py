@@ -1,8 +1,7 @@
-import Search
 from Node import Node
 import heapq
 
-class AStarSearch(Search.Search):
+class AStarSearch():
     def __init__(self, heuristic):
         self.heuristic = heuristic
 
@@ -38,4 +37,4 @@ class AStarSearch(Search.Search):
             node = node.parent
         return path
     
-        
+
