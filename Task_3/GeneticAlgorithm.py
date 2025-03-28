@@ -10,13 +10,43 @@ def generate(n):
         res.append(b)
     return res
 
-def mutations():
+def mutations(p):
     return random.randint(0, 15), random.randint(1, 16)
 
-def mutate(population, mutations):
-    i, j = mutations()
-    population[i] = j
-    return population
+def advanced_mutation(p):
+    a = [0]*16
+    max = 0
+    for i in p:
+        print(i)
+        a[i-1] += 1
+        if a[max] < a[i-1]:
+            max = i-1
+    for i in range(16):
+        if a[i] == 0:
+            return max, i+1
+
+# def mutate(p, mutations):
+#     i, j = mutations(p)
+#     p[i] = j
+#     return p
+
+def mutate(p, rate):
+        for i in range(16):
+            if random.random() < rate:
+                j = random.randrange(16)
+                p[i], p[j] = p[j], p[i]
+        return p
+
+def random_selection(p, n, fn):
+    a = random.choices(p, k=n)
+    if (fn(a[0]) > fn(a[1])):
+        a[0], a[1] = a[1], a[0]
+    for i in a:
+        if fn(i) > fn(a[0]):
+            a[0] = i
+        elif fn(i) > fn(a[1]):
+            a[1] = i
+    return a[1], a[0]
 
 def fn(p):
     row = [0]*16
@@ -42,23 +72,25 @@ def crossover(x, y):
 
 def geneticAlgorithm(p, fn):
     best = 0
-    for sth in range(100):
+    for i in range(10000):
         new_p = []
         potentials = [fn(ind) for ind in p]
         for k in range(len(p)):
-            x, y = random.choices(p, weights=potentials, k=2)
+            x, y = random_selection(p, 5, fn)
             child = crossover(x, y)
-            child = mutate(child, mutations)
+            child = mutate(child, 0.1)
             a = fn(child)
             if a == 120:
                 return child
             if a > best:
                 best = a
-                print(sth, a)
             new_p.append(child)
         p = new_p
+        print(best)
+
     return p
 
 #p = [1,3,5,2,13,9,14,12,15,6,16,7,4,11,8,10], [1,3,5,7,9,11,13,15,16,14,12,10,8,6,4,2]
-p = generate(1024)
+p = generate(100)
 res = geneticAlgorithm(p, fn)
+
