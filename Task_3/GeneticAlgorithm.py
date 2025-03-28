@@ -4,31 +4,8 @@ import copy
 def generate(n):
     res = []
     for i in range(n):
-        b = []
-        for k in range(16):
-            b.append(random.randint(1, 16))
-        res.append(b)
+        res.append(random.sample(range(1,17), 16))
     return res
-
-def mutations(p):
-    return random.randint(0, 15), random.randint(1, 16)
-
-def advanced_mutation(p):
-    a = [0]*16
-    max = 0
-    for i in p:
-        print(i)
-        a[i-1] += 1
-        if a[max] < a[i-1]:
-            max = i-1
-    for i in range(16):
-        if a[i] == 0:
-            return max, i+1
-
-# def mutate(p, mutations):
-#     i, j = mutations(p)
-#     p[i] = j
-#     return p
 
 def mutate(p, rate):
         for i in range(16):
@@ -81,16 +58,16 @@ def geneticAlgorithm(p, fn):
             child = mutate(child, 0.1)
             a = fn(child)
             if a == 120:
+                print(a)
                 return child
             if a > best:
                 best = a
             new_p.append(child)
         p = new_p
-        print(best)
-
     return p
 
-#p = [1,3,5,2,13,9,14,12,15,6,16,7,4,11,8,10], [1,3,5,7,9,11,13,15,16,14,12,10,8,6,4,2]
-p = generate(100)
-res = geneticAlgorithm(p, fn)
+# p = [1,3,5,2,13,9,14,12,15,6,16,7,4,11,8,10]
+population = generate(100)
+res = geneticAlgorithm(population, fn)
+print(res)
 
