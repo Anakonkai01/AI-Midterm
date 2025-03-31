@@ -106,12 +106,13 @@ class GeneticAlgorithm:
                 if child_fit > best:
                     best = child_fit
                 if child_fit == max_fitness:
-                    print("_Gen:",i+1,"-Best fitness:", best)
+                    print("Gen:",i+1,"-Best fitness:", best)
                     return child
                 new_individuals.append(child)
             if (i+1)%50 == 0:
-                print("_Gen:",i+1+"-Best fitness:",best)
+                print("Gen:",i+1,"-Best fitness:",best)
             population.setIndividuals(new_individuals)
+            i += 1
 
 #Generate first generation
 def generate_boards(n):
@@ -122,7 +123,7 @@ def generate_boards(n):
     return boards
 
 #Testing the code
-sample = generate_boards(10)
+sample = generate_boards(100)
 p = Population(sample, fitness_function=Board.fitness_evaluate, crossover_function=Board.crossover, mutate_function=Board.mutate)
-algo = GeneticAlgorithm.run(p, len(sample), max_fitness=120, generation = 1000, mutation_rate = 0.1, tournament_size = 5)
+algo = GeneticAlgorithm.run(p, len(sample), max_fitness=120, generation = 10000, mutation_rate = 0.1, tournament_size = 10)
 print("Here comes the result:", algo)
