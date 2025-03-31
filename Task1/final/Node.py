@@ -1,4 +1,4 @@
-class Node: # TODO: need to do something with this class because it not done 
+class Node: 
     def __init__(self, state, action = None, parent = None, pathCost =None, H_1=None):
         self.state = state 
         self.action = action 
@@ -8,7 +8,8 @@ class Node: # TODO: need to do something with this class because it not done
         self.ID = str(state)
 
     def __str__(self):
-        return  '\n'.join(''.join(str(num) if num != 0 else '_' for num in row) for row in self.get_state().get_board())
+        board_str = '\n'.join(''.join(str(num) if num != 0 else '_' for num in row) for row in self.get_state().get_board())
+        return f"{board_str}\n g_value:{self.get_path_cost()}\n h_value: {self.H_1}"
 
     def __lt__(self, other):
         return self.pathCost + self.H_1 < other.pathCost + other.H_1

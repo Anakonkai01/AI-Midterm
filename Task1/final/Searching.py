@@ -1,12 +1,17 @@
 import heapq
 from Node import Node
 from Problem import Problem
-from    Heuristic import Heuristic
+from Heuristic import Heuristic
+import graphviz as g
+import uuid
 class Searching:
     def __init__(self,heuristic: Heuristic):
+        self.uniqueId = str(uuid.uuid4())[:8] #Id cho file hình ảnh
         self.heuristic = heuristic
-        
+        self.graph = g.Digraph(name = f"Graph_{self.uniqueId}")
+
     def AStar(self, problem: Problem):
+
         initial_state = problem.get_initial_state()
         if problem.isGoalState(initial_state):
             return []
@@ -15,15 +20,16 @@ class Searching:
         initial_node = Node(initial_state,H_1=initial_H, pathCost=0)
 
         frontier = []
-        heapq.heappush(frontier, initial_node) 
+        heapq.heappush(frontier, initial_node)
 
-        explored = {}
+        explored = {initial_node.get_state() : 0}
 
         while frontier:
             node = heapq.heappop(frontier)
+            node.draw(self.graph)
             if problem.isGoalState(node.get_state()):
-                return self.getPath(node) 
-            
+                return self.getPath(node)
+
             for successor in node.getSuccessors():
                 stateOfSuccessor = successor.get_state()
                 g_value = node.pathCost + successor.getCost()#Chi phí hiện tại của cha + chi phí đến con
@@ -35,10 +41,11 @@ class Searching:
                     explored[stateOfSuccessor] = g_value
                     successor.set_G(g_value)
                     successor.set_H(h_value)
-                    heapq.heappush(frontier, successor) 
-        
+                    successor.set_parent(node)
+                    heapq.heappush(frontier, successor)
+
         return None
-         
+
 
 
     def getPath(self, node):
@@ -50,3 +57,8 @@ class Searching:
             if isinstance(node, Node):
                 node = node.get_parent()
         return path[::-1], actions
+
+
+    def Visual(self):
+        self.graph.view()
+

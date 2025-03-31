@@ -34,8 +34,6 @@ H1 = Heuristic("EnhancedManhattan")
 H2 = Heuristic("EnhancedMissplace")
 value1 = H1.getHeuristic(initial_state, EightPuzzleProblem.get_goal_states())
 value2 = H2.getHeuristic(initial_state, EightPuzzleProblem.get_goal_states())
-print(value1)
-print(value2)
 
 #Demo A* and path of A*
 search1 = Searching(H1)
@@ -44,12 +42,15 @@ search2 = Searching(H2)
 path_of_search1 = search1.AStar(EightPuzzleProblem)
 path_of_search2 = search2.AStar(EightPuzzleProblem)
 
-actions_of_search1 = path_of_search1[1]
-print(actions_of_search1)
-for path in path_of_search1[0]:
-    print(f"State: \n{path}\n g_value: {path.pathCost}, h_value: {path.H_1}")
+#actions_of_search1 = path_of_search1[1]
+#print(actions_of_search1)
+#for path in path_of_search1[0]:
+    #print(f"State: \n{path}\n g_value: {path.pathCost}, h_value: {path.H_1}")
 
-actions_of_search2 = path_of_search2[1]
-print(actions_of_search2)
-for path in path_of_search2[0]:
-    print(f"State: \n{path}\n g_value: {path.pathCost}, h_value: {path.H_1}")
+#actions_of_search2 = path_of_search2[1]
+#print(actions_of_search2)
+#for path in path_of_search2[0]:
+    #print(f"State: \n{path}\n g_value: {path.pathCost}, h_value: {path.H_1}")
+
+search1.Visual()
+search2.Visual()

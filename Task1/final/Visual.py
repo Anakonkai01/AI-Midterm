@@ -1,4 +1,5 @@
 import graphviz as g
+# Lớp này không cần thiết nữa vì có hàm Visual() trong Searching
 class Visual:
     def graph_search(node, max_num_nodes = 20):
         dot = g.Digraph()
