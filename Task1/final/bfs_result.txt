@@ -1,0 +1,632 @@
+Testcase: 0
+Initial State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: -1
+Expanded Nodes: 0
+Actions: Goal Reached
+----------------------------------------------------
+
+Testcase: 1
+Initial State: [[0, 1, 2], [3, 4, 5], [6, 8, 7]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 20
+Expanded Nodes: 85191
+Actions: D -> D -> R -> R -> U -> U -> D -> L -> D -> L -> U -> U -> R -> R -> D -> D -> L -> U -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 2
+Initial State: [[0, 1, 2], [3, 4, 5], [7, 6, 8]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 18
+Expanded Nodes: 39363
+Actions: D -> D -> R -> R -> U -> U -> D -> L -> L -> U -> R -> R -> D -> D -> L -> U -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 3
+Initial State: [[0, 1, 2], [3, 4, 5], [7, 8, 6]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 16
+Expanded Nodes: 19477
+Actions: R -> D -> U -> R -> D -> L -> U -> L -> D -> R -> R -> U -> L -> D -> R -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 4
+Initial State: [[0, 1, 2], [3, 4, 5], [8, 6, 7]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 16
+Expanded Nodes: 16145
+Actions: D -> D -> R -> U -> L -> U -> R -> R -> D -> L -> D -> R -> U -> U -> L -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 5
+Initial State: [[0, 1, 2], [3, 4, 5], [8, 7, 6]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 20
+Expanded Nodes: 90733
+Actions: D -> R -> D -> R -> U -> U -> L -> L -> D -> R -> R -> D -> L -> L -> U -> U -> R -> D -> R -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 6
+Initial State: [[0, 1, 2], [3, 4, 6], [5, 7, 8]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 18
+Expanded Nodes: 33475
+Actions: D -> U -> D -> R -> U -> L -> D -> D -> R -> R -> U -> L -> L -> U -> R -> R -> D -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 7
+Initial State: [[0, 1, 2], [3, 4, 6], [5, 8, 7]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 22
+Expanded Nodes: 141736
+Actions: D -> U -> D -> D -> R -> R -> U -> U -> L -> D -> D -> L -> U -> R -> R -> D -> L -> L -> U -> R -> D -> R -> Goal Reached
+----------------------------------------------------
+
+Testcase: 8
+Initial State: [[0, 1, 2], [3, 4, 6], [7, 5, 8]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 16
+Expanded Nodes: 19476
+Actions: R -> D -> U -> R -> D -> L -> U -> L -> D -> R -> R -> U -> L -> D -> D -> R -> Goal Reached
+----------------------------------------------------
+
+Testcase: 9
+Initial State: [[0, 1, 2], [3, 4, 6], [7, 8, 5]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 16
+Expanded Nodes: 19103
+Actions: R -> D -> U -> D -> R -> U -> L -> L -> D -> R -> R -> D -> L -> L -> U -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 10
+Initial State: [[0, 1, 2], [3, 4, 6], [8, 5, 7]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 22
+Expanded Nodes: 142757
+Actions: D -> U -> D -> R -> U -> L -> D -> D -> R -> R -> U -> L -> L -> D -> R -> U -> L -> U -> R -> R -> D -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 11
+Initial State: [[0, 1, 2], [3, 4, 6], [8, 7, 5]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 18
+Expanded Nodes: 34051
+Actions: D -> U -> D -> R -> D -> L -> U -> R -> R -> D -> L -> U -> L -> D -> R -> U -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 12
+Initial State: [[0, 1, 2], [3, 4, 7], [5, 6, 8]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 20
+Expanded Nodes: 72792
+Actions: D -> U -> D -> D -> R -> U -> R -> D -> L -> U -> L -> D -> R -> R -> U -> L -> D -> L -> U -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 13
+Initial State: [[0, 1, 2], [3, 4, 7], [5, 8, 6]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 18
+Expanded Nodes: 43453
+Actions: D -> R -> R -> U -> L -> L -> D -> R -> R -> D -> L -> L -> U -> U -> R -> D -> D -> R -> Goal Reached
+----------------------------------------------------
+
+Testcase: 14
+Initial State: [[0, 1, 2], [3, 4, 7], [6, 5, 8]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 22
+Expanded Nodes: 149744
+Actions: D -> U -> R -> D -> D -> L -> U -> U -> R -> D -> R -> U -> L -> L -> D -> D -> R -> U -> R -> U -> L -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 15
+Initial State: [[0, 1, 2], [3, 4, 7], [6, 8, 5]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 10
+Expanded Nodes: 809
+Actions: D -> U -> D -> R -> R -> D -> L -> U -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 16
+Initial State: [[0, 1, 2], [3, 4, 7], [8, 5, 6]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 20
+Expanded Nodes: 72431
+Actions: D -> U -> D -> D -> R -> U -> L -> D -> R -> R -> U -> L -> L -> D -> R -> R -> U -> L -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 17
+Initial State: [[0, 1, 2], [3, 4, 7], [8, 6, 5]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 18
+Expanded Nodes: 43456
+Actions: D -> R -> R -> U -> L -> L -> D -> R -> R -> D -> L -> L -> U -> U -> R -> D -> R -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 18
+Initial State: [[0, 1, 2], [3, 4, 8], [5, 6, 7]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 16
+Expanded Nodes: 16552
+Actions: D -> D -> R -> R -> U -> U -> D -> L -> L -> U -> R -> R -> D -> L -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 19
+Initial State: [[0, 1, 2], [3, 4, 8], [5, 7, 6]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 18
+Expanded Nodes: 32798
+Actions: D -> U -> D -> D -> R -> U -> L -> D -> R -> R -> U -> L -> L -> D -> R -> U -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 20
+Initial State: [[0, 1, 2], [3, 4, 8], [6, 5, 7]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 10
+Expanded Nodes: 797
+Actions: D -> U -> D -> R -> D -> R -> U -> L -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 21
+Initial State: [[0, 1, 2], [3, 4, 8], [6, 7, 5]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 18
+Expanded Nodes: 39332
+Actions: D -> D -> R -> R -> U -> U -> D -> L -> D -> L -> U -> U -> R -> R -> D -> L -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 22
+Initial State: [[0, 1, 2], [3, 4, 8], [7, 5, 6]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 20
+Expanded Nodes: 85283
+Actions: D -> D -> R -> R -> U -> U -> D -> L -> L -> D -> R -> U -> L -> U -> R -> R -> D -> L -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 23
+Initial State: [[0, 1, 2], [3, 4, 8], [7, 6, 5]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 20
+Expanded Nodes: 84608
+Actions: D -> D -> R -> U -> R -> D -> L -> U -> L -> U -> R -> R -> D -> D -> L -> U -> R -> U -> L -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 24
+Initial State: [[0, 1, 2], [3, 5, 4], [6, 7, 8]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 8
+Expanded Nodes: 320
+Actions: D -> U -> R -> R -> D -> L -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 25
+Initial State: [[0, 1, 2], [3, 5, 4], [6, 8, 7]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 18
+Expanded Nodes: 32921
+Actions: D -> U -> D -> D -> R -> U -> R -> D -> L -> L -> U -> R -> R -> D -> L -> U -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 26
+Initial State: [[0, 1, 2], [3, 5, 4], [7, 6, 8]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 18
+Expanded Nodes: 39926
+Actions: D -> D -> R -> R -> U -> L -> L -> U -> R -> R -> D -> D -> L -> U -> R -> U -> L -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 27
+Initial State: [[0, 1, 2], [3, 5, 4], [7, 8, 6]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 16
+Expanded Nodes: 19860
+Actions: R -> D -> L -> U -> R -> R -> D -> L -> U -> L -> D -> R -> U -> R -> D -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 28
+Initial State: [[0, 1, 2], [3, 5, 4], [8, 6, 7]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 16
+Expanded Nodes: 16352
+Actions: D -> D -> R -> U -> L -> U -> R -> R -> D -> L -> D -> R -> U -> L -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 29
+Initial State: [[0, 1, 2], [3, 5, 4], [8, 7, 6]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 20
+Expanded Nodes: 73575
+Actions: D -> U -> D -> R -> D -> L -> U -> R -> R -> U -> L -> D -> R -> D -> L -> L -> U -> R -> D -> R -> Goal Reached
+----------------------------------------------------
+
+Testcase: 30
+Initial State: [[0, 1, 2], [3, 5, 6], [4, 7, 8]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 12
+Expanded Nodes: 2479
+Actions: R -> D -> L -> D -> R -> R -> U -> L -> U -> R -> D -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 31
+Initial State: [[0, 1, 2], [3, 5, 6], [4, 8, 7]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 20
+Expanded Nodes: 98579
+Actions: R -> D -> D -> R -> U -> U -> L -> L -> D -> D -> R -> U -> U -> R -> D -> L -> U -> R -> D -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 32
+Initial State: [[0, 1, 2], [3, 5, 6], [7, 4, 8]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 18
+Expanded Nodes: 45294
+Actions: R -> D -> D -> R -> U -> U -> D -> U -> L -> L -> D -> R -> R -> U -> L -> D -> R -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 33
+Initial State: [[0, 1, 2], [3, 5, 6], [7, 8, 4]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 16
+Expanded Nodes: 20387
+Actions: R -> D -> L -> D -> R -> R -> U -> L -> D -> L -> U -> R -> U -> R -> D -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 34
+Initial State: [[0, 1, 2], [3, 5, 6], [8, 4, 7]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 16
+Expanded Nodes: 19531
+Actions: R -> D -> L -> D -> R -> R -> U -> L -> L -> D -> R -> U -> U -> R -> D -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 35
+Initial State: [[0, 1, 2], [3, 5, 6], [8, 7, 4]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 20
+Expanded Nodes: 101074
+Actions: R -> D -> D -> R -> U -> U -> L -> L -> D -> R -> D -> L -> U -> R -> R -> U -> L -> D -> R -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 36
+Initial State: [[0, 1, 2], [3, 5, 7], [4, 6, 8]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 20
+Expanded Nodes: 80347
+Actions: D -> U -> R -> D -> R -> U -> L -> L -> D -> D -> R -> U -> L -> U -> R -> D -> R -> U -> L -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 37
+Initial State: [[0, 1, 2], [3, 5, 7], [4, 8, 6]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 16
+Expanded Nodes: 12896
+Actions: D -> U -> D -> R -> D -> R -> U -> L -> L -> D -> R -> R -> U -> L -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 38
+Initial State: [[0, 1, 2], [3, 5, 7], [6, 4, 8]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 18
+Expanded Nodes: 34636
+Actions: D -> U -> D -> R -> R -> D -> L -> U -> L -> D -> R -> R -> U -> L -> D -> L -> U -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 39
+Initial State: [[0, 1, 2], [3, 5, 7], [6, 8, 4]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 16
+Expanded Nodes: 15295
+Actions: D -> U -> R -> D -> R -> U -> D -> D -> L -> U -> U -> R -> D -> L -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 40
+Initial State: [[0, 1, 2], [3, 5, 7], [8, 4, 6]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 18
+Expanded Nodes: 47723
+Actions: R -> D -> R -> U -> L -> L -> D -> R -> D -> L -> U -> R -> R -> U -> L -> D -> R -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 41
+Initial State: [[0, 1, 2], [3, 5, 7], [8, 6, 4]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 18
+Expanded Nodes: 41380
+Actions: D -> D -> R -> R -> U -> L -> L -> U -> R -> R -> D -> L -> D -> R -> U -> U -> L -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 42
+Initial State: [[0, 1, 2], [3, 5, 8], [4, 6, 7]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 10
+Expanded Nodes: 593
+Actions: D -> U -> D -> D -> R -> R -> U -> L -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 43
+Initial State: [[0, 1, 2], [3, 5, 8], [4, 7, 6]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 18
+Expanded Nodes: 46430
+Actions: R -> D -> R -> U -> L -> L -> D -> D -> R -> U -> U -> R -> D -> L -> U -> R -> D -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 44
+Initial State: [[0, 1, 2], [3, 5, 8], [6, 4, 7]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 16
+Expanded Nodes: 14258
+Actions: D -> U -> R -> D -> D -> R -> U -> U -> D -> U -> L -> D -> R -> U -> L -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 45
+Initial State: [[0, 1, 2], [3, 5, 8], [6, 7, 4]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 12
+Expanded Nodes: 1973
+Actions: D -> U -> D -> D -> R -> R -> U -> L -> D -> L -> U -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 46
+Initial State: [[0, 1, 2], [3, 5, 8], [7, 4, 6]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 14
+Expanded Nodes: 5095
+Actions: D -> U -> D -> D -> R -> R -> U -> L -> L -> D -> R -> U -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 47
+Initial State: [[0, 1, 2], [3, 5, 8], [7, 6, 4]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 18
+Expanded Nodes: 49827
+Actions: R -> D -> R -> D -> L -> U -> R -> U -> L -> L -> D -> R -> R -> U -> L -> D -> R -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 48
+Initial State: [[0, 1, 2], [3, 6, 4], [5, 7, 8]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 16
+Expanded Nodes: 14755
+Actions: D -> U -> D -> R -> R -> D -> L -> L -> U -> R -> D -> R -> U -> L -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 49
+Initial State: [[0, 1, 2], [3, 6, 4], [5, 8, 7]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 16
+Expanded Nodes: 17874
+Actions: D -> R -> D -> L -> U -> U -> R -> R -> D -> L -> D -> R -> U -> L -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 50
+Initial State: [[0, 1, 2], [3, 6, 4], [7, 5, 8]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 12
+Expanded Nodes: 2819
+Actions: D -> R -> D -> L -> U -> U -> R -> R -> D -> L -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 51
+Initial State: [[0, 1, 2], [3, 6, 4], [7, 8, 5]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 10
+Expanded Nodes: 855
+Actions: D -> U -> D -> R -> R -> D -> L -> L -> U -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 52
+Initial State: [[0, 1, 2], [3, 6, 4], [8, 5, 7]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 16
+Expanded Nodes: 14764
+Actions: D -> U -> D -> R -> R -> D -> L -> L -> U -> R -> R -> D -> L -> U -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 53
+Initial State: [[0, 1, 2], [3, 6, 4], [8, 7, 5]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 14
+Expanded Nodes: 7208
+Actions: D -> R -> D -> L -> U -> U -> R -> R -> D -> D -> L -> U -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 54
+Initial State: [[0, 1, 2], [3, 6, 5], [4, 7, 8]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 16
+Expanded Nodes: 18823
+Actions: R -> D -> R -> U -> L -> L -> D -> R -> R -> U -> L -> D -> L -> D -> R -> R -> Goal Reached
+----------------------------------------------------
+
+Testcase: 55
+Initial State: [[0, 1, 2], [3, 6, 5], [4, 8, 7]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 16
+Expanded Nodes: 16173
+Actions: D -> R -> D -> L -> U -> U -> R -> R -> D -> L -> D -> R -> U -> U -> L -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 56
+Initial State: [[0, 1, 2], [3, 6, 5], [7, 4, 8]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 8
+Expanded Nodes: 224
+Actions: D -> U -> D -> R -> D -> L -> U -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 57
+Initial State: [[0, 1, 2], [3, 6, 5], [7, 8, 4]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 16
+Expanded Nodes: 14152
+Actions: D -> U -> D -> R -> U -> R -> D -> D -> L -> L -> U -> R -> R -> U -> L -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 58
+Initial State: [[0, 1, 2], [3, 6, 5], [8, 4, 7]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 20
+Expanded Nodes: 75387
+Actions: D -> U -> D -> R -> U -> R -> D -> D -> L -> L -> U -> R -> R -> D -> L -> U -> R -> U -> L -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 59
+Initial State: [[0, 1, 2], [3, 6, 5], [8, 7, 4]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 16
+Expanded Nodes: 17932
+Actions: D -> R -> D -> L -> U -> U -> R -> R -> D -> D -> L -> U -> R -> U -> L -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 60
+Initial State: [[0, 1, 2], [3, 6, 7], [4, 5, 8]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 18
+Expanded Nodes: 46982
+Actions: R -> D -> R -> D -> L -> U -> L -> D -> R -> R -> U -> L -> U -> R -> D -> L -> D -> R -> Goal Reached
+----------------------------------------------------
+
+Testcase: 61
+Initial State: [[0, 1, 2], [3, 6, 7], [4, 8, 5]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 20
+Expanded Nodes: 85752
+Actions: D -> D -> R -> U -> R -> U -> L -> L -> D -> R -> R -> D -> L -> L -> U -> U -> R -> D -> R -> D -> Goal Reached
+----------------------------------------------------
+
+Testcase: 62
+Initial State: [[0, 1, 2], [3, 6, 7], [5, 4, 8]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 18
+Expanded Nodes: 47561
+Actions: R -> D -> R -> U -> L -> L -> D -> D -> R -> U -> R -> U -> L -> D -> L -> D -> R -> R -> Goal Reached
+----------------------------------------------------
+
+Testcase: 63
+Initial State: [[0, 1, 2], [3, 6, 7], [5, 8, 4]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 18
+Expanded Nodes: 35438
+Actions: D -> U -> D -> R -> D -> R -> U -> L -> D -> L -> U -> R -> D -> R -> U -> L -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 64
+Initial State: [[0, 1, 2], [3, 6, 7], [8, 4, 5]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 14
+Expanded Nodes: 5250
+Actions: D -> U -> D -> R -> D -> L -> U -> R -> R -> D -> L -> U -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 65
+Initial State: [[0, 1, 2], [3, 6, 7], [8, 5, 4]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 18
+Expanded Nodes: 44757
+Actions: D -> R -> R -> U -> D -> D -> L -> L -> U -> U -> R -> R -> D -> D -> L -> U -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 66
+Initial State: [[0, 1, 2], [3, 6, 8], [4, 5, 7]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 18
+Expanded Nodes: 44473
+Actions: R -> D -> D -> R -> U -> U -> L -> L -> D -> R -> R -> U -> L -> D -> L -> D -> R -> R -> Goal Reached
+----------------------------------------------------
+
+Testcase: 67
+Initial State: [[0, 1, 2], [3, 6, 8], [4, 7, 5]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 14
+Expanded Nodes: 6902
+Actions: R -> D -> L -> D -> R -> R -> U -> L -> U -> R -> D -> L -> D -> R -> Goal Reached
+----------------------------------------------------
+
+Testcase: 68
+Initial State: [[0, 1, 2], [3, 6, 8], [5, 4, 7]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 14
+Expanded Nodes: 5016
+Actions: D -> U -> D -> D -> R -> U -> L -> D -> R -> R -> U -> L -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 69
+Initial State: [[0, 1, 2], [3, 6, 8], [5, 7, 4]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 20
+Expanded Nodes: 96662
+Actions: D -> R -> R -> U -> D -> D -> L -> L -> U -> U -> R -> R -> D -> L -> D -> R -> U -> L -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 70
+Initial State: [[0, 1, 2], [3, 6, 8], [7, 4, 5]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 18
+Expanded Nodes: 42231
+Actions: D -> R -> D -> R -> U -> U -> D -> L -> D -> L -> U -> U -> R -> R -> D -> L -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 71
+Initial State: [[0, 1, 2], [3, 6, 8], [7, 5, 4]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 12
+Expanded Nodes: 2047
+Actions: D -> U -> D -> R -> D -> R -> U -> L -> D -> L -> U -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 72
+Initial State: [[0, 1, 2], [3, 7, 4], [5, 6, 8]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 12
+Expanded Nodes: 2561
+Actions: D -> D -> R -> U -> L -> U -> R -> R -> D -> L -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 73
+Initial State: [[0, 1, 2], [3, 7, 4], [5, 8, 6]]
+Goal State: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Total Cost: 16
+Expanded Nodes: 14634
+Actions: D -> U -> D -> R -> R -> U -> L -> D -> R -> D -> L -> L -> U -> R -> D -> R -> Goal Reached
+----------------------------------------------------
+
+Testcase: 74
+Initial State: [[0, 1, 2], [3, 7, 4], [6, 5, 8]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 18
+Expanded Nodes: 32912
+Actions: D -> U -> D -> D -> R -> U -> R -> D -> L -> L -> U -> R -> D -> R -> U -> L -> L -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 75
+Initial State: [[0, 1, 2], [3, 7, 4], [6, 8, 5]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 10
+Expanded Nodes: 914
+Actions: D -> U -> R -> R -> D -> D -> L -> U -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 76
+Initial State: [[0, 1, 2], [3, 7, 4], [8, 5, 6]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 18
+Expanded Nodes: 49103
+Actions: R -> R -> D -> D -> L -> L -> U -> R -> R -> D -> L -> U -> L -> D -> R -> U -> U -> L -> Goal Reached
+----------------------------------------------------
+
+Testcase: 77
+Initial State: [[0, 1, 2], [3, 7, 4], [8, 6, 5]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 14
+Expanded Nodes: 5755
+Actions: D -> U -> D -> R -> D -> L -> U -> R -> R -> D -> L -> L -> U -> U -> Goal Reached
+----------------------------------------------------
+
+Testcase: 78
+Initial State: [[0, 1, 2], [3, 7, 5], [4, 6, 8]]
+Goal State: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Total Cost: 8
+Expanded Nodes: 207
+Actions: D -> U -> D -> D -> R -> U -> L -> U -> Goal Reached
+----------------------------------------------------
+
