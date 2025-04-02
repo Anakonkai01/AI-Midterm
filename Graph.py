@@ -29,6 +29,7 @@ class Graph:
     def is_corner(self, position):
         return position in self.corners.values()
     # read file
+    @staticmethod
     def readfile(filename):
         wall = []
         food = []
@@ -47,4 +48,4 @@ class Graph:
                         start = (x, y)
                     elif char == 'O': #neu la pie thi append toa do vao list
                         pie.append((x, y))
-        return wall, food, pie, start
+        return Graph(wall, food, pie, start)  # Return a Graph object instead of a tuple
