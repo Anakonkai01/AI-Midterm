@@ -35,21 +35,21 @@ class Search:
         if not food:
             return 0
 
-        # Hàm tính chi phí giữa 2 điểm, xét đến teleport
-        def cost_with_teleport(p1, p2):
-            direct_cost = manhattan_distance(p1, p2)
+        # ham tinh chi phi giua pacman va goal, so sanh voi teleport dua tren y tuong heuristic cu
+        def cost_with_teleport(pacman, goal):
+            direct_cost = manhattan_distance(pacman, goal)
             teleport_costs = []
-            # Duyệt qua các teleport được định nghĩa trong graph.corners
+            # duyet qua tat ca cac teleport
             for entrance, destination in graph.corners.items():
-                # Chi phí đi: từ p1 đến entrance + chi phí teleport (0.5) + từ destination đến p2
-                cost = manhattan_distance(p1, entrance) + manhattan_distance(destination, p2)
+                # chi phi di tu pacman den entrance + từ destination den goal
+                cost = manhattan_distance(pacman, entrance) + manhattan_distance(destination, goal)
                 teleport_costs.append(cost)
             return min(direct_cost, min(teleport_costs))
         
-        # Khoảng cách từ vị trí hiện tại đến food gần nhất
+        # khoang cach tu pacman den goal gan nhat
         current_to_food = min(cost_with_teleport((x, y), f) for f in food)
         
-        # Tính chi phí của cây bao trùm tối thiểu (MST) trên các food còn lại
+        # tinh chi phi cay bao trum toi thieu mst cho cac food con lai
         food_list = list(food)
         if len(food_list) <= 1:
             mst_cost = 0
@@ -72,12 +72,14 @@ class Search:
 
         return current_to_food + mst_cost
 
+
+
     @staticmethod
-    def combined_heuristic(position, graph):
+    def combined_heuristic(position, graph): # ket hop giua improve heuristic va heuristic ban dau
         def manhattan_distance(a, b):
             return abs(a[0] - b[0]) + abs(a[1] - b[1])
         
-        # Hàm tính khoảng cách giữa 2 điểm với các biến thể của teleport
+        # Nang cap chinh sua tu heuristic ban dau lai sao cho no clean code
         def adjusted_cost(p1, p2):
             x2, y2 = p2
             distances = []
@@ -92,10 +94,8 @@ class Search:
         if not food:
             return 0
 
-        # Tính khoảng cách từ vị trí hiện tại đến food gần nhất với điều chỉnh
         current_to_food = min(adjusted_cost((x, y), f) for f in food)
         
-        # Tính MST cost trên tập food sử dụng adjusted_cost
         food_list = list(food)
         if len(food_list) <= 1:
             mst_cost = 0
