@@ -1,5 +1,3 @@
-import pygame
-import time
 from Graph import Graph
 from Search import Search
 from Pacman import Visualize
@@ -10,5 +8,3 @@ search = Search(graph, graph.start)
 path, cost = search.astar_search()
 visualize = Visualize(graph, path)
 visualize.path_Pacman()
-
-

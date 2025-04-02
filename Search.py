@@ -1,6 +1,7 @@
 import heapq
 import math
 from Graph import Graph
+
 class Search:
     def __init__(self, graph, position):
         self.graph = graph
@@ -24,6 +25,99 @@ class Search:
         if not food:
             return 0
         return min(min_manhattan_7_goal)
+    
+    @staticmethod
+    def improved_heuristic(position, graph):
+        def manhattan_distance(a, b):
+            return abs(a[0] - b[0]) + abs(a[1] - b[1])
+            
+        x, y, food, pie, step = position
+        if not food:
+            return 0
+
+        # Hàm tính chi phí giữa 2 điểm, xét đến teleport
+        def cost_with_teleport(p1, p2):
+            direct_cost = manhattan_distance(p1, p2)
+            teleport_costs = []
+            # Duyệt qua các teleport được định nghĩa trong graph.corners
+            for entrance, destination in graph.corners.items():
+                # Chi phí đi: từ p1 đến entrance + chi phí teleport (0.5) + từ destination đến p2
+                cost = manhattan_distance(p1, entrance) + manhattan_distance(destination, p2)
+                teleport_costs.append(cost)
+            return min(direct_cost, min(teleport_costs))
+        
+        # Khoảng cách từ vị trí hiện tại đến food gần nhất
+        current_to_food = min(cost_with_teleport((x, y), f) for f in food)
+        
+        # Tính chi phí của cây bao trùm tối thiểu (MST) trên các food còn lại
+        food_list = list(food)
+        if len(food_list) <= 1:
+            mst_cost = 0
+        else:
+            mst_cost = 0
+            connected = {food_list[0]}
+            remaining = set(food_list[1:])
+            while remaining:
+                min_edge = float('inf')
+                next_food = None
+                for a in connected:
+                    for b in remaining:
+                        d = cost_with_teleport(a, b)
+                        if d < min_edge:
+                            min_edge = d
+                            next_food = b
+                mst_cost += min_edge
+                connected.add(next_food)
+                remaining.remove(next_food)
+
+        return current_to_food + mst_cost
+
+    @staticmethod
+    def combined_heuristic(position, graph):
+        def manhattan_distance(a, b):
+            return abs(a[0] - b[0]) + abs(a[1] - b[1])
+        
+        # Hàm tính khoảng cách giữa 2 điểm với các biến thể của teleport
+        def adjusted_cost(p1, p2):
+            x2, y2 = p2
+            distances = []
+            distances.append(manhattan_distance(p1, p2))
+            distances.append(manhattan_distance(p1, (x2 + 36 - 3, y2 + 18 - 3)))
+            distances.append(manhattan_distance(p1, (x2 - 36 + 3, y2 - 18 + 3)))
+            distances.append(manhattan_distance(p1, (x2 + 36 - 3, y2 - 18 + 3)))
+            distances.append(manhattan_distance(p1, (x2 - 36 + 3, y2 + 18 - 3)))
+            return min(distances)
+        
+        x, y, food, pie, step = position
+        if not food:
+            return 0
+
+        # Tính khoảng cách từ vị trí hiện tại đến food gần nhất với điều chỉnh
+        current_to_food = min(adjusted_cost((x, y), f) for f in food)
+        
+        # Tính MST cost trên tập food sử dụng adjusted_cost
+        food_list = list(food)
+        if len(food_list) <= 1:
+            mst_cost = 0
+        else:
+            mst_cost = 0
+            connected = {food_list[0]}
+            remaining = set(food_list[1:])
+            while remaining:
+                min_edge = float('inf')
+                next_food = None
+                for a in connected:
+                    for b in remaining:
+                        d = adjusted_cost(a, b)
+                        if d < min_edge:
+                            min_edge = d
+                            next_food = b
+                mst_cost += min_edge
+                connected.add(next_food)
+                remaining.remove(next_food)
+        
+        return current_to_food + mst_cost
+
 
 
     def find_neighbours(self, position):
@@ -96,7 +190,7 @@ class Search:
 
     def astar_search(self):
         start_state = (self.graph.start[0], self.graph.start[1], frozenset(self.graph.food), frozenset(self.graph.pie), 0)
-        frontier = [(self.heuristic(start_state, self.graph), 0, start_state)]
+        frontier = [(self.improved_heuristic(start_state, self.graph), 0, start_state)]
 
         came_from = {start_state: (None, None)}
         cost_so_far = {start_state: 0}
@@ -118,7 +212,7 @@ class Search:
                 new_cost = cost_so_far[state] + cost
                 if next_state not in cost_so_far or new_cost < cost_so_far[next_state]:
                     cost_so_far[next_state] = new_cost
-                    priority = new_cost + self.heuristic(next_state, self.graph)
+                    priority = new_cost + self.improved_heuristic(next_state, self.graph)
                     heapq.heappush(frontier, (priority, new_cost, next_state))
                     came_from[next_state] = (state, action)
         
@@ -129,6 +223,7 @@ class Search:
             if act == action:
                 return next_state, teleport_food
         return state, None
+    
     @staticmethod #phuong thuc tinh 
     def remove_eaten(graph, position):
         if position in graph.food:

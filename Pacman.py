@@ -2,6 +2,7 @@ import pygame
 from Graph import Graph
 from Search import Search
 import time
+
 class Visualize:
     def __init__(self, graph, path, cell_size=30):
         self.graph = graph
@@ -40,14 +41,14 @@ class Visualize:
 
         
         index = 0
-        move_delay = 0.01  
+        move_delay = 0.3
         last_move_time = time.time()
         if self:
             print("Actions:", ", ".join(self.path))
             print("Total cost:", len(self.path))
             print("\nHeuristic values at each step:")
             for state, _ in state_sequence:
-                h_value = Search.heuristic(state, self)
+                h_value = Search.improved_heuristic(state, self.graph)
                 print(f"State: {state[:2]}, Heuristic: {h_value}")
         else:
             print("No path found")
