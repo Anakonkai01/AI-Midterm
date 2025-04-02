@@ -129,8 +129,8 @@ class Search:
             if act == action:
                 return next_state, teleport_food
         return state, None
-
-    def remove_eaten(self, graph, position):
+    @staticmethod #phuong thuc tinh 
+    def remove_eaten(graph, position):
         if position in graph.food:
             graph.food.remove(position)
         if position in graph.pie:
